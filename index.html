@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcela con Piscina para Eventos | Tu Evento Soñado Comienza Aquí</title>
+    <meta name="description" content="Arrienda nuestra exclusiva parcela con piscina para eventos. Ideal para cumpleaños, matrimonios íntimos, bautizos y fiestas empresariales.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación Fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-swimming-pool"></i>
+                <span>Parcela Eventos</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#parcela" class="nav-link">La Parcela</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Tu Evento Comienza Aquí</h1>
+            <h2 class="hero-subtitle">Arrienda para eventos privados</h2>
+            <p class="hero-description">
+                Un hermoso lugar para celebrar en familia o con amigos. 
+                Capacidad para hasta 100 personas. 
+                El lugar perfecto para cumpleaños, matrimonios íntimos, bautizos y fiestas empresariales.
+            </p>
+            <a href="#contacto" class="cta-button">
+                <span>Consultar Disponibilidad y Tarifas</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección: La Parcela -->
+    <section id="parcela" class="parcela-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">La Parcela</h2>
+                <p class="section-subtitle">Descubre los espacios que harán de tu evento un dia maravilloso</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="feature-title">Piscina Grande</h3>
+                    <p class="feature-description">
+                        Piscina de gran tamaño ideal para adultos y niños, rodeada de áreas de descanso con sombra natural. 
+                        Perfecta para refrescarse durante los días cálidos.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="feature-title">Espacios Flexibles</h3>
+                    <p class="feature-description">
+                        Amplias áreas verdes perfectas para ceremonias al aire libre, montaje de carpas y zonas de baile. 
+                        Espacios adaptables a cualquier tipo de celebración.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="feature-title">Comodidades Completas</h3>
+                    <p class="feature-description">
+                        Baños impecables, estacionamiento privado para múltiples vehículos, 
+                        quincho y área de barbacoa completamente equipados para tu comodidad.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Ambiente Natural y Privado</h3>
+                    <p class="feature-description">
+                        Seguridad y exclusividad garantizadas para tu celebración. 
+                        Disfruta de la tranquilidad y privacidad que tu evento merece.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Galería -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galería</h2>
+                <p class="section-subtitle">Explora cada rincón de nuestro espacio</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Las imágenes se cargarán dinámicamente -->
+                <!-- Placeholder images - Reemplazar con fotos reales -->
+                <div class="gallery-item" data-category="vistas">
+                    <img src="img/1.jpeg" alt="Vista panorámica de la parcela">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="piscina">
+                    <img src="img/2.jpeg" alt="Piscina cristalina">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="quincho">
+                    <img src="img/3.jpeg" alt="Quincho y área de barbacoa">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/4.jpeg" alt="Evento montado">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="piscina">
+                    <img src="img/5.jpeg" alt="Área de relajo junto a la piscina">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vistas">
+                    <img src="img/6.jpeg" alt="Vista aérea de la parcela">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="atardecer">
+                    <img src="img/7.jpeg" alt="Atardecer en la parcela">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vistas">
+                    <img src="img/8.jpeg" alt="Vista de la parcela">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="piscina">
+                    <img src="img/9.jpeg" alt="Piscina y áreas verdes">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="eventos">
+                    <img src="img/10.jpeg" alt="Espacios para eventos">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vistas">
+                    <img src="img/11.jpeg" alt="Vista general de la parcela">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Galería -->
+    <div class="gallery-modal" id="galleryModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <span class="modal-prev" id="modalPrev">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="modal-next" id="modalNext">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <img class="modal-image" id="modalImage" src="" alt="">
+    </div>
+
+    <!-- Sección: Servicios -->
+    <section id="servicios" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servicios Incluidos</h2>
+                <p class="section-subtitle">Todo lo que necesitas para hacer de tu evento un éxito</p>
+            </div>
+
+            <div class="services-container">
+                <div class="services-column">
+                    <div class="service-category">
+                        <h3 class="service-category-title">
+                            <i class="fas fa-check-circle"></i>
+                            Servicios Incluidos
+                        </h3>
+                        <ul class="service-list">
+                            <li><i class="fas fa-check"></i> Baños limpios y bien mantenidos</li>
+                            <li><i class="fas fa-check"></i> Piscina grande para adultos y niños</li>
+                            <li><i class="fas fa-check"></i> Estacionamiento privado para múltiples vehículos</li>
+                            <li><i class="fas fa-check"></i> Quincho y área de barbacoa equipados</li>
+                            <li><i class="fas fa-check"></i> Áreas verdes y espacios al aire libre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto y Reserva</h2>
+                <p class="section-subtitle">Estamos aquí para hacer realidad tu evento perfecto</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha">Fecha del Evento</label>
+                                <input type="date" id="fecha" name="fecha">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoEvento">Tipo de Evento</label>
+                                <select id="tipoEvento" name="tipoEvento">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="cumpleanos">Cumpleaños</option>
+                                    <option value="matrimonio">Matrimonio Íntimo</option>
+                                    <option value="bautizo">Bautizo</option>
+                                    <option value="empresarial">Fiesta Empresarial</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu evento..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Enviar Consulta</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Información de Contacto</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+56912345678">+56 9 9458 4994</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:contacto@parcelaeventos.cl">mauro.lopezc08@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ubicación</h4>
+                                <p>Lonquen Sur Comuna de Talagante</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Parcela Eventos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
