@@ -162,44 +162,47 @@ document.addEventListener('keydown', (e) => {
 
 // Formulario de Contacto
 const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Obtener datos del formulario
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ejemplo, usando fetch para enviar a un servidor
-    console.log('Datos del formulario:', data);
-    
-    // Mostrar mensaje de éxito (puedes personalizar esto)
-    alert('¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.');
-    
-    // Limpiar formulario
-    contactForm.reset();
-    
-    // Opcional: Enviar a un endpoint
-    /*
-    fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert('¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.');
-        contactForm.reset();
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al enviar tu consulta. Por favor, intenta nuevamente.');
+if (contactForm && formStatus) {
+    const submitButton = contactForm.querySelector('.submit-button');
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        formStatus.textContent = 'Enviando tu consulta...';
+        formStatus.className = 'form-status';
+        submitButton.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            });
+
+            if (response.ok) {
+                formStatus.textContent = '¡Gracias! Te contactaremos muy pronto.';
+                formStatus.classList.add('success');
+                contactForm.reset();
+            } else {
+                const data = await response.json().catch(() => null);
+                const errorMessage = data?.errors?.map(err => err.message).join(', ') || 'Hubo un error al enviar tu consulta. Intenta nuevamente.';
+                formStatus.textContent = errorMessage;
+                formStatus.classList.add('error');
+            }
+        } catch (error) {
+            formStatus.textContent = 'No pudimos enviar tu consulta. Revisa tu conexión e inténtalo otra vez.';
+            formStatus.classList.add('error');
+        } finally {
+            submitButton.disabled = false;
+        }
     });
-    */
-});
+}
 
 // Animación al hacer scroll (Intersection Observer)
 const observerOptions = {

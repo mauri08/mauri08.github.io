@@ -606,6 +606,22 @@ section {
     box-shadow: var(--shadow-md);
 }
 
+.form-status {
+    margin-top: 15px;
+    min-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text-dark);
+}
+
+.form-status.success {
+    color: var(--color-secondary);
+}
+
+.form-status.error {
+    color: #c0392b;
+}
+
 .contact-info {
     background: white;
     padding: 40px;
